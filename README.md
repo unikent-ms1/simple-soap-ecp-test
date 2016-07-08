@@ -10,7 +10,7 @@ Usage
 
 The script defaults to impersonating an Office365 Azure based SP. Override by specifying the EntityID of the SP you wish to impersonate in the ```ENTITYID``` environment variable.
 
-You also need to specify the registered endpoint that the request is pretending to come from. Again, this defaults to the Office365 endpoint. Override with ```ENDPOINT```.
+You also need to specify the registered endpoint that the request is pretending to come from. Again, this defaults to the Office365 endpoint. This is the URL specified in the metadata of the SP you’re impersonating for the AssertionConsumerService attribute with binding ```urn:oasis:names:tc:SAML:2.0:bindings:PAOS```. Override with ```ENDPOINT```.
 
 You **MUST** specify a ```URL``` to make the request against. For a Shibboleth IDP this probably looks like ```https://idp.example.com/idp/profile/SAML2/SOAP/ECP```.
 
