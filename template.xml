@@ -1,0 +1,22 @@
+<SOAP-ENV:Envelope 
+    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+    xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" 
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:ecp="urn:oasis:names:tc:SAML:2.0:profiles:SSO:ecp">
+    <SOAP-ENV:Header>
+     </SOAP-ENV:Header>
+     <SOAP-ENV:Body> 
+        <samlp:AuthnRequest
+		ID="__RANDOM_STRING__" 
+		ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+		AssertionConsumerServiceURL="__AssertionConsumerServiceURL__"
+		IssueInstant="__NOW__"
+		Version="2.0"
+	>
+	<saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
+		__REMOTE_ENTITYID__
+	</saml:Issuer>
+	<samlp:NameIDPolicy AllowCreate="1"/>
+	</samlp:AuthnRequest>       
+     </SOAP-ENV:Body> 
+</SOAP-ENV:Envelope>
