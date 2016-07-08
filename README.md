@@ -10,12 +10,12 @@ The script defaults to impersonating an Office365 Azure based SP. Override by sp
 
 You also need to specify the registered endpoint that the request is pretending to come from. Again, this defaults to the Office365 endpoint. Override with ```ENDPOINT```.
 
-You *MUST* specify a ```URL``` to make the request against. For a Shibboleth IDP this probably looks like ```https://idp.example.com/idp/profile/SAML2/SOAP/ECP```.
+You **MUST** specify a ```URL``` to make the request against. For a Shibboleth IDP this probably looks like ```https://idp.example.com/idp/profile/SAML2/SOAP/ECP```.
 
 Example
 -------
 
-**The values for ```ENTITYID``` and ```ENDPOINT``` are the defaults.**
+*The values for ```ENTITYID``` and ```ENDPOINT``` are the defaults.*
 
 ```
 CRED=user:pass \
