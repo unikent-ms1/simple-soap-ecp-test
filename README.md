@@ -3,6 +3,8 @@ Simple SOAP ECP Test
 
 This simple script performs a test on a Basic Auth protected SAML2 ECP endpoint.
 
+Based on original work from http://blogs.kent.ac.uk/unseenit/simple-shibboleth-ecp-test/
+
 Usage
 -----
 
