@@ -24,6 +24,6 @@ echo $REQUEST | xmllint --pretty 1 -
 echo $REQUEST |
 	curl -k \
 		-d @- \
-		-H "Content-Type: application/vnd.paos+xml" \
+		-H "Content-Type: text/xml" \
 		--basic -u $CRED \
 		$URL 
