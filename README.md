@@ -27,4 +27,5 @@ URL=https://idp.example.com/idp/profile/SAML2/SOAP/ECP \
 bash test.sh | xmllint --pretty 1 -
 ```
 
-
+You can also override the HTTP `Content-Type` in the request by setting
+`CONTENT_TYPE` environment variables.
